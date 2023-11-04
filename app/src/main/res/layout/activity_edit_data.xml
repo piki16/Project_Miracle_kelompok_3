@@ -44,7 +44,7 @@
         android:id="@+id/jenisbrg"
         android:layout_width="215dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/drawable_tampil"
         android:text="     Jenis_Barang"
         android:textColor="@color/white"
@@ -58,36 +58,37 @@
         android:id="@+id/stokbrg"
         android:layout_width="215dp"
         android:layout_height="50dp"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/drawable_tampil"
         android:text="      Stok_Barang"
         android:textColor="@color/white"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="@+id/idbrg"
+        app:layout_constraintEnd_toEndOf="@+id/jenisbrg"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/idbrg"
-        app:layout_constraintTop_toBottomOf="@+id/idbrg"
+        app:layout_constraintStart_toStartOf="@+id/jenisbrg"
+        app:layout_constraintTop_toBottomOf="@+id/jenisbrg"
         tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/hargabrg"
         android:layout_width="215dp"
         android:layout_height="50dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/drawable_tampil"
         android:text="      Harga_Barang"
         android:textColor="@color/white"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="@+id/idbrg"
+        app:layout_constraintEnd_toEndOf="@+id/stokbrg"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/idbrg"
+        app:layout_constraintStart_toStartOf="@+id/stokbrg"
+        app:layout_constraintTop_toBottomOf="@+id/stokbrg"
         app:layout_constraintTop_toBottomOf="@+id/idbrg"
-        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/idcln"
         android:layout_width="215dp"
         android:layout_height="50dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/drawable_tampil"
         android:text="     Id_Barang"
         android:textColor="@color/white"
@@ -101,48 +102,54 @@
         android:id="@+id/stokscln"
         android:layout_width="215dp"
         android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/drawable_tampil"
         android:text="     Stok_Barang"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/jeniscln"
         app:layout_constraintStart_toStartOf="@+id/jeniscln"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteY="563dp" />
+        app:layout_constraintTop_toBottomOf="@+id/jeniscln"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/jeniscln"
         android:layout_width="215dp"
         android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/drawable_tampil"
         android:text="    Jenis_Barang"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/idcln"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/idcln"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteY="500dp" />
+        app:layout_constraintTop_toBottomOf="@+id/idcln"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <EditText
         android:id="@+id/hargacln"
         android:layout_width="215dp"
         android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/drawable_tampil"
         android:text="     Harga_Barang"
         android:textColor="@color/white"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="@+id/stokscln"
         app:layout_constraintStart_toStartOf="@+id/stokscln"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteY="625dp" />
+        app:layout_constraintTop_toBottomOf="@+id/stokscln"
+        tools:ignore="DuplicateIds,MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnselesai"
         android:layout_width="103dp"
-        android:layout_height="47dp"
-        android:textColor="@color/white"
-        android:text="Selesai"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/drawable_tampil"
+        android:text="Selesai"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
