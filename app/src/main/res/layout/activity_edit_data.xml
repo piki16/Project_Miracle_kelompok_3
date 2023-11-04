@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download__1_"
+    tools:context=".Edit_Data">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="163dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jeans_2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="114dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shirt_1" />
+
+    <EditText
+        android:id="@+id/idbrg"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="     Id_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/jenisbrg"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="     Jenis_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/idbrg"
+        app:layout_constraintStart_toStartOf="@+id/idbrg"
+        app:layout_constraintTop_toBottomOf="@+id/idbrg"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/stokbrg"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="      Stok_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/idbrg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/idbrg"
+        app:layout_constraintTop_toBottomOf="@+id/idbrg"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/hargabrg"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="      Harga_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/idbrg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/idbrg"
+        app:layout_constraintTop_toBottomOf="@+id/idbrg"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/idcln"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="     Id_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/stokscln"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="     Stok_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/jeniscln"
+        app:layout_constraintStart_toStartOf="@+id/jeniscln"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteY="563dp" />
+
+    <EditText
+        android:id="@+id/jeniscln"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="    Jenis_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/idcln"
+        app:layout_constraintStart_toStartOf="@+id/idcln"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <EditText
+        android:id="@+id/hargacln"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:background="@drawable/drawable_tampil"
+        android:text="     Harga_Barang"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/stokscln"
+        app:layout_constraintStart_toStartOf="@+id/stokscln"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnselesai"
+        android:layout_width="103dp"
+        android:layout_height="47dp"
+        android:textColor="@color/white"
+        android:text="Selesai"
+        android:background="@drawable/drawable_tampil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="61dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_back_arrow_1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
